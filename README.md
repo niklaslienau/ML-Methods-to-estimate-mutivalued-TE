@@ -22,7 +22,7 @@ To replicate my results, simply download the zip folder and run the “MonteCarl
 
 # Details
 While I use the DGP from Xu & Tan (2022) ,  I hardcoded the data generating process and did not use the “simu.data” function in the authors “mRCAL” R package. The reason is that the source code of the function sets a seed, so that it draws the exact same sample in each iteration of my monte carlo simulation. Because it is difficult to solve mathematically for the true potential outcome means in the population, the “Population_sim.R” draws a huge sample of size 10^6, computes potential outcome means and interprets them as the underlying population values. The “DGP_sim.R” file hardcodes the DGP and implements it in one callable function called “simu.dat” which takes the argument n (sample size) and returns a list object called “simu.data”. This list contains the covariate matrix, the treatment assignment matrix, the outcome vector,the 4 true potential outcome means, the true potential outcome means conditional on the treatment group, the true coefficients in the propensity score model and the true coefficients in the outcome regression model.
-The “MonteCarlo.R” file ultimately produces the main results. The script is structured into three parts:
+The “MonteCarlo.R” file ultimately produces the main results. The "MonteCarlo.R" script is structured into three parts:
 1. ## Start
    - Sources the “Population_sim.R” and “DGP_sim.R” and loads packages 
 2. ## Data Simulation
