@@ -17,7 +17,7 @@ This repo contains all replication files for my M.Sc thesis on "Machine Learning
 
 # Replication 
 To replicate my results, simply download the zip folder and run the “MonteCarlo.R” file. This script automatically sources the “DGP_sim.R” and the “Population_sim.R” files. To succesfuly run the program you need to 
-- have installed the packages "xgboost" , "gbm", "glmnet" , "nnet" ,"trust", "Rcpp" , "MASS" and "mvtnorm"
+- have installed the packages "xgboost" , "gbm", "glmnet" , "nnet" ,"trust", "Rcpp" , "MASS", "xtable" and "mvtnorm"
 - Set the working directory in line 13 of the "MonteCarlo.R" file. The working directory has to be set to the place where the downloaded zip folder is stored (also where the "MonteCarlo.R" file is stored on the computer)
 
 # Details
